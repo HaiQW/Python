@@ -1,0 +1,118 @@
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+Traceback (most recent call last):
+  File "dimension_distribution.py", line 6, in <module>
+    plot.plot(bins,1/())
+TypeError: unsupported operand type(s) for /: 'int' and 'tuple'
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+Traceback (most recent call last):
+  File "dimension_distribution.py", line 8, in <module>
+    plot.hist(y, 30, normed=True,c = 'red')
+  File "/usr/lib64/python2.7/site-packages/matplotlib/pyplot.py", line 2827, in hist
+    stacked=stacked, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/matplotlib/axes.py", line 8527, in hist
+    p.update(kwargs)
+  File "/usr/lib64/python2.7/site-packages/matplotlib/artist.py", line 739, in update
+    raise AttributeError('Unknown property %s' % k)
+AttributeError: Unknown property c
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+Traceback (most recent call last):
+  File "dimension_distribution.py", line 8, in <module>
+    plot.hist(y, 30, normed=True,colour= 'red')
+  File "/usr/lib64/python2.7/site-packages/matplotlib/pyplot.py", line 2827, in hist
+    stacked=stacked, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/matplotlib/axes.py", line 8527, in hist
+    p.update(kwargs)
+  File "/usr/lib64/python2.7/site-packages/matplotlib/artist.py", line 739, in update
+    raise AttributeError('Unknown property %s' % k)
+AttributeError: Unknown property colour
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+Traceback (most recent call last):
+  File "dimension_distribution.py", line 8, in <module>
+    plot.hist(y, 30,'red')
+  File "/usr/lib64/python2.7/site-packages/matplotlib/pyplot.py", line 2827, in hist
+    stacked=stacked, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/matplotlib/axes.py", line 8326, in hist
+    m, bins = np.histogram(x[i], bins, weights=w[i], **hist_kwargs)
+  File "/usr/lib64/python2.7/site-packages/numpy/lib/function_base.py", line 162, in histogram
+    mn, mx = range
+ValueError: too many values to unpack
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+Traceback (most recent call last):
+  File "dimension_distribution.py", line 8, in <module>
+    plot.hist(y, 30, c = 'red')
+  File "/usr/lib64/python2.7/site-packages/matplotlib/pyplot.py", line 2827, in hist
+    stacked=stacked, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/matplotlib/axes.py", line 8527, in hist
+    p.update(kwargs)
+  File "/usr/lib64/python2.7/site-packages/matplotlib/artist.py", line 739, in update
+    raise AttributeError('Unknown property %s' % k)
+AttributeError: Unknown property c
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2200
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2200
+[HaiQW@localhost random_sample]python  dimension_distribution.py
+2200
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2200
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2200
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+4000
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2002
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2200
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2200
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2200
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2200
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2020
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2030
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2030
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2030
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2030
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2030
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2030
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2030
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2030
+[HaiQW@localhost random_sample]$ python  dimension_distribution.py
+2030
+[HaiQW@localhost random_sample]$ python rare_distribution.py
+2050
+[HaiQW@localhost random_sample]$ python rare_distribution.py
+2050
+[HaiQW@localhost random_sample]$ python rare_distribution.py
+2100
+[HaiQW@localhost random_sample]$ python rare_distribution.py
+2100
+[HaiQW@localhost random_sample]$ python rare_distribution.py
+2100
+[HaiQW@localhost random_sample]$ python rare_distribution.py
+2100

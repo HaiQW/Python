@@ -1,0 +1,37 @@
+import numpy as np
+import matplotlib.pyplot as plot
+
+N = 50000
+T1 = np.random.rand(N)
+T2 = np.random.rand(N)
+
+r = np.sqrt( -2 * np.log(T2))
+theta = 2 * np.pi * T1
+X = r * np.cos(theta)
+Y = r * np.sin(theta)
+
+N = 5000
+T3 = np.random.rand(N)
+T4 = np.random.rand(N)
+
+r1 = np.sqrt( -0.2 * np.log(T3))
+theta1 = 2 * np.pi * T4
+X1 = r1 * np.cos(theta1) + 5
+Y1 = r1 * np.sin(theta1) + 5
+
+#X = np.append(X,X1)
+#Y = np.append(Y,Y1)
+
+print X.size
+heatmap, xedges, yedges = np.histogram2d(X,Y,bins = 200)
+heatmap2, xedges2, yedges2 = np.histogram2d(X1,Y1,bins = 200)
+extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
+extent2 = [xedges2[0], xedges2[-1], yedges2[0], yedges2[-1]]
+
+print heatmap
+
+plot.imshow(heatmap,extent = extent)
+
+plot.imshow(heatmap2,cmap = plot.cm.Reds_r,extent = extent2)
+
+plot.show()
