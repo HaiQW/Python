@@ -24,19 +24,20 @@ w = np.sqrt(2)
 r = np.sqrt( -2 *(0.005) * np.log(T3*1/w))
 theta1 = 2 * np.pi * T4
 theta2 =  2 * np.pi * T5
-X2 = r * np.sin(theta1) * np.cos(theta2) + 0.5
-Y2 = r * np.sin(theta1) * np.sin(theta2) + 0.5
+X2 = r * np.sin(theta1) * np.cos(theta2) + 1
+Y2 = r * np.sin(theta1) * np.sin(theta2) + 1
 Z2 = r * np.cos(theta1) + 1
 #heatmap2, xedges2, yedges2 = np.histogram2d(X1,Y1,bins = 200)
 #extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
 #extent2 = [xedges2[0], xedges2[-1], yedges2[0], yedges2[-1]]
 
-
-
 fig = plot.figure()
 ax = fig.add_subplot(111,projection = '3d')
 ax.scatter(X1,Y1,Z1,color = 'g')
 ax.scatter(X2,Y2,Z2,color = 'red')
+ax.scatter(1.2,1.2,1.2,color = 'blue')
+ax.scatter(1.2,1,1.5,color = 'blue')
+ax.scatter(1,1,1.3,color = 'blue')
 ax.set_xticks([])
 ax.set_yticks([])
 ax.set_zticks([])

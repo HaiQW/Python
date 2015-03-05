@@ -80,6 +80,15 @@ theta = 2 * np.pi * T6
 X2 = r * np.sin(theta)-3
 Y2= r * np.cos(theta)+3
 
+N = 20
+T7 = np.random.rand(N)
+T8 = np.random.rand(N)
+
+r = np.sqrt( -2 * 0.001 * np.log(T7))
+theta = 2 * np.pi * T8
+X3 = r * np.sin(theta)-0.5
+Y3 = r * np.cos(theta)-1
+
 line_x = [-5,4]
 line_y = [0,0]
 line = MyLine(line_x, line_y, color = 'black',mfc='black', ms=12)
@@ -115,12 +124,13 @@ Y1 = np.append(Y1,Y2)
 fig, ax = plot.subplots()
 ax.scatter(X,Y,c = 'g',lw = 0.1,label = r"$major$")
 ax.scatter(X1,Y1,s = 100,c = 'r',marker = (5,1), lw=0.1,label = r"$anomaly$")
+ax.scatter(X3,Y3,s = 100,c = 'y',marker = (3,1), lw=0.1,label = r"$rare$")
 #ax.scatter(X2,Y2,s = 100,c = 'r',marker = (5,1), lw = 0.1,label = r"$anomaly$")
-ax.text(-2,0,r"$split:1$",fontdict = font)
-ax.text(1,3.5,r"$split:2$",fontdict = font)
-ax.text(-1,3.5,r"$split:3$",fontdict = font)
-ax.text(-2,2.5,r"$split:4$",fontdict = font)
-ax.text(-2.5,3.5,r"$split:5$",fontdict = font)
+#ax.text(-2,0,r"$split:1$",fontdict = font)
+#ax.text(1,3.5,r"$split:2$",fontdict = font)
+#ax.text(-1,3.5,r"$split:3$",fontdict = font)
+#ax.text(-2,2.5,r"$split:4$",fontdict = font)
+#ax.text(-2.5,3.5,r"$split:5$",fontdict = font)
 ax.text(-3.85,3.7,r"$x$",fontdict = font_1)
 ax.legend()
 ax.add_line(line)
