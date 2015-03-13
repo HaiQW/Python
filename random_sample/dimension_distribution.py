@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plot
-import matplotlib.mlab as mlab
 from sklearn.neighbors import KernelDensity
 
 def kde_sklearn(x, x_grid, bandwidth=0.2, **kwargs):
